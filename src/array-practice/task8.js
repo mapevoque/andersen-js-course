@@ -11,3 +11,13 @@
  * console.log(without([2, 1, 2, 3], 1, 2)) -> [3]
  * console.log(without([2, 1, 10, 20], 1, 2)) -> [10, 20]
  */
+
+export function without(array, ...values) {
+    if (!array) {
+      return;
+    }
+    array = array.filter(function (val) {
+      return !values.includes(val);
+    }); 
+    return array;
+  }
