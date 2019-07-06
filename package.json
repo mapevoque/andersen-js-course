@@ -6,7 +6,7 @@
   "author": "Viktor Danilov <wikslayer@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "nodemon src/index.js",
     "build": "webpack"
   },
   "devDependencies": {
@@ -22,8 +22,13 @@
     "webpack-dev-server": "^3.5.0"
   },
   "dependencies": {
-    "fetch": "^1.1.0",
-    "node-fetch": "^2.6.0",
-    "package-json": "^6.4.0"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hapi": "^18.1.0",
+    "mogoose": "^3.1.8",
+    "mongodb": "^2.2.25",
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0"
   }
 }
